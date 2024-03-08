@@ -1,0 +1,25 @@
+/* Course Details Styles */
+
+#course-details-section {
+    padding: 20px;
+}
+
+.course-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.course-info {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.course-title {
+    margin-top: 0;
+}
+
+.course-info p {
+    margin: 10px 0;
+}

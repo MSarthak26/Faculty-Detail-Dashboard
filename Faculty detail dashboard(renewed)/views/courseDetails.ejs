@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <link rel="stylesheet" href="/header.css"> <!-- Include your CSS file -->
+    <link rel="stylesheet" href="/courseDetail.css"> <!-- New CSS file for course details -->
+</head>
+<body>
+
+    <%- include('header') %>
+    
+    <main>
+        <section class="course-details" id="course-details-section">
+            <h1 class="course-heading">Course Details</h1>
+            <div class="course-info" id="course-info-container">
+                <h2 class="course-title" id="course-title"><%= course[0].course_title %></h2>
+                <p class="faculty"><strong>Faculty:</strong> <%= course[0].faculty_name %></p>
+                <p class="description"><strong>Description:</strong> <%= course[0].description %></p>
+                <p class="syllabus"><strong>Syllabus:</strong> <%= course[0].syllabus %></p>
+                <p class="format"><strong>Format:</strong> <%= course[0].format %></p>
+                <p class="credits"><strong>Number of credits:</strong> <%= course[0].credits %></p>
+                <p class="schedule"><strong>Schedule:</strong> <%= course[0].schedule %></p>
+                <p class="prerequisites"><strong>Prerequisites:</strong> <%= course[0].prerequisites %></p>
+                <!-- Add more course details here as needed -->
+            </div>
+        </section>
+    </main>
+
+    <%- include('footer') %>
+</body>
+</html>

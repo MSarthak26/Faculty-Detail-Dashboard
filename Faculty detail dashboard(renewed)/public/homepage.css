@@ -1,0 +1,144 @@
+/* Global Styles */
+html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    
+}
+body {
+    overflow-x: hidden;
+   
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Background color */
+    color: #333; /* Text color */
+}
+
+/* Hero Section Styles */
+.hero {
+    padding: 50px 20px; /* Hero padding */
+    text-align: center;
+}
+
+.hero-content h2 {
+    margin: 0;
+    font-size: 36px;
+    color: #007bff; /* Header text color */
+}
+
+.hero-content p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    background-color: #fff; /* Search bar background color */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to search bar */
+}
+
+.search-bar form {
+    display: inline-block;
+}
+
+.search-bar select,
+.search-bar input[type="text"],
+.search-bar button {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar select {
+    width: 150px;
+}
+
+.search-bar input[type="text"] {
+    width: 300px;
+}
+
+.search-bar button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.quick-links,
+.upcoming-events,
+.recent-announcements {
+    flex-basis: 30%;
+}
+
+.quick-links h3,
+.upcoming-events h3,
+.recent-announcements h3 {
+    margin-top: 0;
+    color: #007bff; /* Header text color */
+}
+
+.quick-links ul,
+.upcoming-events ul,
+.recent-announcements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links ul li,
+.upcoming-events ul li,
+.recent-announcements ul li {
+    margin-bottom: 10px;
+}
+
+.quick-links ul li a,
+.upcoming-events ul li a,
+.recent-announcements ul li a {
+    text-decoration: none;
+    color: #333; /* Text color */
+    transition: color 0.3s;
+}
+
+.quick-links ul li a:hover,
+.upcoming-events ul li a:hover,
+.recent-announcements ul li a:hover {
+    color: #007bff; /* Hover text color */
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #007bff; /* Footer background color */
+    color: #fff; /* Footer text color */
+    padding: 20px; /* Add padding to footer */
+    text-align: center; /* Center align content */
+}
+
+.contact-info,
+.social-media,
+.copyright {
+    margin-bottom: 10px; /* Add spacing between sections */
+}
+
+.social-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text color */
+    margin: 0 5px; /* Add spacing between social media links */
+}
+
+.social-link:hover {
+    color: #f0f0f0; /* Lighter color on hover */
+}

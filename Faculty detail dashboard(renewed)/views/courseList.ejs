@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Listings</title>
+    <link rel="stylesheet" href="/header.css"> <!-- Include your CSS file -->
+    <link rel="stylesheet" href="/courseList.css"> <!-- New CSS file for course listings -->
+</head>
+<body>
+
+    <%- include('header') %>
+    <main id="course-listings">
+        <h1 id="page-heading">Course Listings</h1>
+        <% for( let index = 0; index < list.length; index++ ) { %>
+        
+            <div class="course" id="course<%= index %>">
+                <form action="/courseDetail" method="post">
+                    <h2 class="course-title"><button type="submit" name="courseName" value="<%= list[index].course_title %>"><%= list[index].course_title %></button></h2>
+                </form>
+                <div class="faculty">
+                    <h3 class="faculty-name">Faculty name: <%= list[index].faculty_name %></h3>
+                </div>
+            </div>
+            <% } %> 
+      <!-- Add more faculty sections as needed -->
+    </main>
+    <footer class="footer">
+        <div class="contact-info">
+            <p>Contact Us: example@example.com</p>
+        </div>
+        <div class="social-media">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 University Name. All rights reserved.</p>
+        </div>
+    </footer>
+   
+</body>
+</html>

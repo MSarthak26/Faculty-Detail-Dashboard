@@ -1,0 +1,28 @@
+/* Footer Styles */
+.footer {
+    background-color: #007bff; /* Footer background color */
+    color: #fff; /* Footer text color */
+    padding: 20px; /* Add padding to footer */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to footer */
+    text-align: center; /* Center align content */
+    position: fixed; /* Fixed positioning */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width */
+}
+
+.contact-info,
+.social-media,
+.copyright {
+    margin-bottom: 10px; /* Add spacing between sections */
+}
+
+.social-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text color */
+    margin: 0 5px; /* Add spacing between social media links */
+    font-size: 16px; /* Adjust font size */
+}
+
+.social-link:hover {
+    color: #f0f0f0; /* Lighter color on hover */
+}

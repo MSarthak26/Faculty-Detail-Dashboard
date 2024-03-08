@@ -1,0 +1,71 @@
+/* Updated CSS for Faculty Directory */
+
+.directory-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faculty-list-container {
+    text-align: center; /* Center align the content */
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 800px; /* Set maximum width for better readability */
+    box-shadow: 0 0 0 2px #007bff; /* Add box-shadow with spread radius */
+    padding: 10px; /* Add padding for better visual appearance */
+}
+
+
+
+.profile-list {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center the list */
+}
+
+.profile-item {
+    margin-bottom: 20px;
+}
+
+.profile-button {
+    background: none;
+    border: none;
+    color: #007bff; /* Text color */
+    padding: 0;
+    font-size: inherit;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.profile-button:hover {
+    color: #0056b3; /* Hover color */
+}
+
+.divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #007bff; /* Footer background color */
+    color: #fff; /* Footer text color */
+    padding: 20px; /* Add padding to footer */
+    text-align: center; /* Center align content */
+}
+
+.contact-info,
+.social-media,
+.copyright {
+    margin-bottom: 10px; /* Add spacing between sections */
+}
+
+.social-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text color */
+    margin: 0 5px; /* Add spacing between social media links */
+}
+
+.social-link:hover {
+    color: #f0f0f0; /* Lighter color on hover */
+}

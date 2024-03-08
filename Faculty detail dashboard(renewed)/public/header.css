@@ -1,0 +1,51 @@
+/* Header Styles */
+.header {
+    background-color: #fff; /* Light background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px 0; /* Top and bottom padding */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px; /* Set a maximum width for responsiveness */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .logo {
+    flex: 1; /* Allow logo to grow */
+  }
+  
+  .logo h1 {
+    margin: 0; /* Remove margin from h1 */
+    font-size: 24px; /* Adjust font size */
+  }
+  
+  .navigation {
+    flex: 2; /* Allow navigation to take more space */
+    text-align: right; /* Right-align navigation links */
+  }
+  
+  .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .navigation ul li a {
+    text-decoration: none;
+    color: #333; /* Dark text color */
+    transition: color 0.3s;
+    font-size: 16px; /* Adjust font size */
+  }
+  
+  .navigation ul li a:hover {
+    color: #007bff; /* Blue hover color */
+  }
+  

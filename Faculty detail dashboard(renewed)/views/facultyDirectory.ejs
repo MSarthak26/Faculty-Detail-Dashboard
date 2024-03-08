@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Directory</title>
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/facultyDirectory.css"> <!-- Updated CSS file for faculty directory -->
+</head>
+<body>
+<%- include('header') %>
+
+<main>
+    <section class="faculty-directory">
+        <h1 class="directory-heading">Faculty Directory</h1>
+        <div class="faculty-list-container"> <!-- Division to center the list -->
+            <ul class="profile-list">
+                <% for( let i = 0; i < facultyDirectory.length; i++ ) { %>
+                    <div class="faculty-profile-container">
+                        <div class="profile-item">
+                            <li>
+                                <form action="/getprofile" method="post">
+                                    <h2 class="faculty-name"><button type="submit" class="profile-button" name="name" value="<%= facultyDirectory[i].name %>"><%= facultyDirectory[i].name %></button></h2>
+                                    <p class="department"><strong>Department:</strong> <%= facultyDirectory[i].department %></p>
+                                    <p class="email"><strong>Email:</strong> <%= facultyDirectory[i].email %></p>
+                                </form>
+                            </li>
+                            <hr class="divider">
+                        </div>
+                    </div>
+                <% } %>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="contact-info">
+        <p>Contact Us: example@example.com</p>
+    </div>
+    <div class="social-media">
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">Instagram</a>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 University Name. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

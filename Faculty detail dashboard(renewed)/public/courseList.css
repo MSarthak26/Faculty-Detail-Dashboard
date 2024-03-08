@@ -1,0 +1,71 @@
+/* Course Listings Styles */
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Course Listings Styles */
+
+#course-listings {
+    padding: 20px;
+}
+
+#page-heading {
+    text-align: center;
+}
+
+.course {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.course-title {
+    margin-top: 0;
+}
+
+.faculty-name {
+    margin: 0;
+    font-style: italic;
+    color: #666;
+}
+
+button[type="submit"] {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    color: #007bff;
+    padding: 0;
+}
+
+button[type="submit"]:hover {
+    text-decoration: underline;
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #007bff; /* Footer background color */
+    color: #fff; /* Footer text color */
+    padding: 20px; /* Add padding to footer */
+    text-align: center; /* Center align content */
+}
+
+.contact-info,
+.social-media,
+.copyright {
+    margin-bottom: 10px; /* Add spacing between sections */
+}
+
+.social-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text color */
+    margin: 0 5px; /* Add spacing between social media links */
+}
+
+.social-link:hover {
+    color: #f0f0f0; /* Lighter color on hover */
+}

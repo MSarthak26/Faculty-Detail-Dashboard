@@ -1,0 +1,112 @@
+
+<head>
+    <link rel="stylesheet" href="/homepage.css">
+</head>
+<%- include('header') %>
+<section class="hero">
+    <div class="hero-content">
+        <h2>Welcome to the Student Dashboard</h2>
+        <p>Explore your academic journey with us.</p>
+    </div>
+</section>
+
+<main>
+    <section class="search-bar">
+        <h2>Search Faculty</h2>
+        <form action="/searchFaculty" method="post">
+            <select name="search_by" id="search_by">
+                <option value="faculty_id">Search by ID</option>
+                <option value="name">Search by Name</option>
+            </select>
+            <input type="text" name="search_query" placeholder="Enter faculty name or id..." required autocomplete="off">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section class="search-bar">
+        <h2>Search Courses</h2>
+        <form action="/searchCourses" method="post">
+            <select name="search_by" id="search_by">
+                <option value="course_id">Search by ID</option>
+                <option value="course_name">Search by Name</option>
+            </select>
+            <input type="text" name="search_query" placeholder="Enter course name or id..." required autocomplete="off">
+            <button type="submit">Search</button>
+        </form>
+
+
+    <section class="main-content">
+        <!-- <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#faculty-directory">Faculty Directory</a></li>
+                <li><a href="#course-listings">Course Listings</a></li>
+            </ul>
+        </div> -->
+        <div class="upcoming-events">
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li>Event 1</li>
+                <li>Event 2</li>
+                <li>Event 3</li>
+            </ul>
+        </div>
+        <div class="recent-announcements">
+            <h3>Recent Announcements</h3>
+            <ul>
+                <li>Announcement 1</li>
+                <li>Announcement 2</li>
+                <li>Announcement 3</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- <aside class="sidebar">
+        <div class="profile-section">
+            <h3>Profile</h3>
+            <p>Name: John Doe</p>
+            <p>Email: john@example.com</p>
+        </div> -->
+        <!-- <div class="feedback-form">
+            <h3>Feedback Form</h3>
+            <form action="#" method="post">
+                <textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="Provide your feedback..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div> -->
+         
+    <!-- </aside>  -->
+</main>
+</body>
+
+<footer class="footer">
+    <div class="contact-info">
+        <p>Contact Us: example@example.com</p>
+    </div>
+    <div class="social-media">
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">Instagram</a>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 University Name. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <!-- <aside class="sidebar">
+        <div class="profile-section">
+            <h3>Profile</h3>
+            <p>Name: John Doe</p>
+            <p>Email: john@example.com</p>
+        </div> -->
+        <!-- <div class="feedback-form">
+            <h3>Feedback Form</h3>
+            <form action="#" method="post">
+                <textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="Provide your feedback..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div> -->
+         
+    <!-- </aside>  -->
+

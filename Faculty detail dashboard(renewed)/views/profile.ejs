@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Profile</title>
+    <link rel="stylesheet" href="/profile.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/footer.css">
+</head>
+<body>
+    <%- include('header.ejs') %>
+
+    <main>
+        <section class="faculty-profile">
+            <h1 class="profile-heading">Faculty Profile</h1>
+            <div class="profile-details">
+                <h2 class="profile-name"><%= details[0].name %></h2>
+                <p class="profile-info"><strong>Department:</strong> <%= details[0].department %></p>
+                <p class="profile-info"><strong>Email:</strong> <%= details[0].email %></p>
+                <p class="profile-info"><strong>Designation:</strong> <%= details[0].designation %></p>
+                <p class="profile-info"><strong>Area of Expertise:</strong> <%= details[0].area_of_expertise %></p>
+                <p class="profile-info"><strong>Seating Room:</strong> <%= details[0].seating_room %></p>
+                <!-- Add more profile details here as needed -->
+            </div>
+        </section>
+    </main>
+
+    <%- include('footer') %>
+</body>
+</html>
